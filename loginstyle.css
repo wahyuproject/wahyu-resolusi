@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	height: 600px;
+	background-color: pink;
+	align-items: center;
+	font-family: sans-serif;
+}
+.grup{
+	background-color: #fff;
+	width: 350px;
+	text-align: center;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.grup h2{
+	margin: 0 0 20px;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.grup .login{
+	position: relative;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.grup .login input{
+	height: 50px;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-size: 10px;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+.grup .login span{
+	position: absolute;
+	top: 12px;
+	left: 20px;
+	padding: 0px;
+	text-transform: capitalize;
+	background-color: #fff;
+	transition: 0.5s;
+}
+.grup .login input:focus ~ span,
+.grup .login input:valid ~ span{
+	top: -12px;
+	left: 20px;
+	font-size: 12px;
+	background-color: hotpink;
+	padding: 2px 4px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.grup .login input[type="submit"]{
+	background-color: hotpink;
+	border: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	width: 35%;
+	transition: 0.5s;
+}
+.grup .login input[type="submit"]:hover{
+	width: 100%;
+	background-color: rgba(225, 0, 0, 0.5);
+	color: #fff;
+}
